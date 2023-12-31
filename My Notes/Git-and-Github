@@ -1,0 +1,93 @@
+Git and Github
+
+Youtube video link : https://www.youtube.com/watch?v=apGV9Kg7ics&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=5
+
+Channel: Kunal Kushwaha
+
+Terminal commands
+
+- [ ] mkdir project -> Make directory with name “project”
+- [ ] ls -> list down the items present
+- [ ] ls -a -> list down all items including hidden items
+- [ ] git init -> initialise git
+- [ ] touch names.txt -> create new file with name “names” of .txt type.
+- [ ] rm -rf .DS_Store -> Removes the file with name “.DS_Store”
+- [ ] vi names.txt -> vis editor hai jis se hum “names.txt” file edit kr skte hain.
+- [ ] cat names.txt -> it displays whatever is there in “names.txt” file. jo bhi names.txt mein likha hoga woh terminal pr hi show kr dega
+- [ ]
+
+
+
+
+
+
+
+
+xxxxxxxx——————————xxxxxxxx
+
+Git commands
+
+Git best real-life example :
+
+Guests in a wedding going on staging to have their picture with couple for Wedding Photo Album
+
+Photo krvana wedding mein is cumpulsory.
+
+Abb yhaa Guests different files hain jinki history maintain hogi in the form of a photo in a repo (Wedding photo album)
+
+
+- [ ] git status -> tells if there are any untracked files (means jo file abhi repo mein naa daali ho sirf local pr ho. (jo guests wedding mein exist krte hain pr stage pr nhi gye for photo
+- [ ] git status  -> It also tells if any files are added (In green colour) (jo guests already stage pr hain for photo pr abhi photo huyi nhi hai)
+
+- [ ] git add . -> yea saari untracked files add krega jo bhi uss folder mein hoon (All red files) (sabhi guests jo stage pr nhi gye for photo woh stage pr chla jayein)
+
+- [ ] git add names.txt -> yea sirf “names.txt” wali ko hi add krega baaki files ko nhi. (koi paticular guest jo stage pr nhi gya tha woh photo k liye stage pr chla jaye)
+
+- [ ] git commit -m “names.txt files added” -> commit with message (photo click krna )
+
+——————x——————
+sanchitgupta@197NODMB28741 project % git status
+On branch master
+nothing to commit, working tree clean
+
+iska mtlb ki koi aur bnda bacha hai jiski photo nhi huyi ??
+-> NO koi nhi bacha sabki photo ho gyi hai.
+——————x——————
+- [ ] git restore - - staged names.txt  -> Will not add the file.
+kisi ko stage se utarna ho toh iss command se utar jayega.
+Jbb git add . krenge and 5-6 files green mein aa jayengi and kisi 1 file ko uss mein se remove krna ho toh yea command use kr skte hain.
+
+- [ ] git log -> saari history nikaalne k liye jitne bhi commits kiye gye sabki.
+
+——————x——————
+commit 8125e5e1532b6d6fd49c29e8fd5391baa2413dc7
+Author: Sanchit Gupta <sanchit.gupta@paytm.com>
+Date:   Wed Dec 27 01:07:45 2023 +0530
+
+8125e5e1532b6d6fd49c29e8fd5391baa2413dc7 -> isko Hash id bolte hain. yea commit ki id hai. iss id ki help se kisi purane commit pr jaa kste hain.
+
+——————x——————
+
+- [ ] git reset 8125e5e1532b6d6fd49c29e8fd5391baa2413dc7
+(yea wala commit aa jayega . iske baad jo commits the woh remove ho jayenge.)
+
+- [ ] git stash -> jaise kuch files hain jo aap commit nhi krna chahte and delete bhi nhi krna chahte bss Backstage mein pddi hoon toh usse stash krdo.
+eg kuch code likha jo work kr rha hai , but better code likhna hai isko bina commit kiye and iss code ko bhi khi saved rakhna hai backstage mein toh stash kr diya
+
+- [ ] git stash pop -> jisko stash kiya tha i.e backstage pr daala tha usko pop krke waapis front stage pr lekar aana
+- [ ] git stash clear -> jo files bina commit k stash / background mein rakhi thi usko hmesha k liye delete krna ho.
+eg: 1 code likh kr stash mein rakh liya , fir better code likh liya so stash wala delete krdo fir.
+
+
+
+
+
+
+xxxxxxxx——————————xxxxxxxx
+
+Github
+
+
+
+
+git remote set-url origin https://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@github.com/SanchitGupta2530/Sanchit-Notes.git

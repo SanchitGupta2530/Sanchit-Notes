@@ -1,0 +1,60 @@
+
+Structure of Java Program
+
+
+1. Class name and .java file name same hona chahiye.
+for eg : Demo.java file mein Demo class honi chahiye. tabhi program chlega.
+
+2. Class Name capital alpabet se start krna chahiye.
+eg : class Demo
+
+3. “javac Demo.java” will compile the program and create Byte code. yea command chlane pr “Demo.class” file bnn jayegi jis mein Byte code hoga.
+4. “java Demo” by this JVM will read the byte code and convert it into computer understandable language.(Binary language)
+
+  5.main function se hi program execute hona start hota hai.Java mein main function hona is cumpulsory.
+
+6. public static void main (String[ ] args)
+
+- [ ] public : public means pure program mein khi se bhi yea block of code use kr sakein.
+
+Abb “main” itna important function hai so we definately want ki main public ho.
+
+- [ ] static : Abb we know , class k objects hote hain. objects ki help se hi hum functions wgera execute krte hain.
+
+But abb main function chlana hai. main function chlane se pehle uss class ka object kaise bnayein jiss mein main function pdaa hai??
+
+Object bina bnaye hi chl jaye main , so hum ne main function ko static rakh liya.
+
+Static variables and functions are the ones which are not dependent on class object to be executed.
+
+static kr dene se abb “main” function ko object ki jrurat nhi to run.
+
+- [ ] void : void is return type of the function.
+
+- [ ] main : function name
+
+- [ ] (String[ ] args) : Arguments / command-line arguments
+
+Strings[ ] -> This is array
+Collection of Strings
+
+abb jo arguments hum terminal se denge , as an array it will store in this variable “args”.
+
+eg :
+Program
+	System.out.println("Hello World!!!");
+	System.out.println( args[0] );
+        System.out.println( args[1] );
+
+In Terminal
+	javac Demo.java
+	java Demo 30 “Sanchit”
+(yhaa 30 and “Sanchit” arguments hain jo command line mtlb terminal se pass kiya hain direct)
+
+Output :
+Hello World!!!
+30
+Sanchit
+
+
+————————————x————————x————————
